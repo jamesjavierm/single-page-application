@@ -52,3 +52,15 @@ function handleCreatePost() {
         alert('Post content cannot be empty');
     }
 }
+
+function renderPostList() {
+    const postListElement = document.getElementById('postList');
+    postListElement.innerHTML = ''; // Clear the current list
+    posts.forEach((post) => {
+        const postItem = document.createElement('li');
+        postItem.textContent = post;
+        postListElement.appendChild(postItem);
+9/25/24, 7:57 PM Tutorial: Building a Single Page Web Application with Vanilla JavaScript, HTML, and CSS
+https://md2pdf.netlify.app 5/6
+    });
+    }
