@@ -14,3 +14,18 @@ function renderSignUp() {
         </form>
     ;
 }
+
+let userName = '';
+function handleSignUp() {
+9/25/24, 7:57 PM Tutorial: Building a Single Page Web Application with Vanilla JavaScript, HTML, and CSS
+https://md2pdf.netlify.app 3/6
+    const nameInput = document.getElementById('name').value;
+    const emailInput = document.getElementById('email').value;
+    const passwordInput = document.getElementById('password').value;
+    if (nameInput && emailInput && passwordInput) {
+        userName = nameInput; // Store the user's name in a global variable
+        renderHomePage();     // Move to the next step in the app
+    } else {
+        alert('Please fill out all fields');
+    }
+}
