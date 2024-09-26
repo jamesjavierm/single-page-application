@@ -40,3 +40,15 @@ function renderHomePage() {
         <ul id="postList"></ul>
     `;
 }
+
+let posts = [];
+function handleCreatePost() {
+    const postContent = document.getElementById('postContent').value;
+    
+    if (postContent) {
+        posts.push(postContent); // Add the new post to the posts array
+        renderPostList();        // Update the displayed post list
+    } else {
+        alert('Post content cannot be empty');
+    }
+}
