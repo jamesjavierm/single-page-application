@@ -29,3 +29,14 @@ https://md2pdf.netlify.app 3/6
         alert('Please fill out all fields');
     }
 }
+
+function renderHomePage() {
+    rootDiv.innerHTML = `
+        <h1>Welcome, ${userName}!</h1>
+        <h2>Create a Post</h2>
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea><br>
+        <button type="button" onclick="handleCreatePost()">Post</button>
+        <h3>Your Posts</h3>
+        <ul id="postList"></ul>
+    `;
+}
