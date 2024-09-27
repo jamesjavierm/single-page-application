@@ -1,48 +1,37 @@
-body{
-    background-image: url("https://img.freepik.com/free-vector/white-color-background-gradient-abstract-modern_343694-2130.jpg");
-    background-size: cover;
-}
-header{
-    text-align: center;
-    padding: 10px;
-    
-}
-header img{
-    width: 400px;
-    height: 300px;
-    margin-bottom: 10px;
-}
-.gmi{
-    float: left;
-    width: 150px;
-    height: 150px; 
-    margin-bottom: auto; 
-}
-.gmd{
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    font-size: larger;
-    font-weight:600;
-    text-transform: uppercase;
-    margin-bottom: auto;
-}
-header nav a {
-    list-style: none;
-    padding: 0;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-.title{
-    font-size: 3em;  
-    background: linear-gradient(to right, #f00, #ff0);  
-    -webkit-background-clip: text;  
-    color: transparent;  
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-footer{
-    text-align: center;
-    padding: 10px;
+body {
+    background-color: purple; /* Set the background color to purple */
+    color: white; /* Change text color to white for better contrast */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Take full viewport height */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text alignment */
 }
 
+h1, h2, h3 {
+    margin: 10px 0; /* Add some margin to headers */
+}
+
+button {
+    background-color: pink; /* Set button background color to pink */
+    color: black; /* Set button text color to black for contrast */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding to buttons */
+    font-size: 16px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add rounded corners to buttons */
+    transition: background-color 0.3s; /* Add a transition effect */
+}
+
+button:hover {
+    background-color: lightcoral; /* Change background color on hover */
+}
+
+textarea {
+    width: 80%; /* Set width of the textarea */
+    height: 100px; /* Set height of the textarea */
+    margin: 10px 0; /* Add margin to textarea */
+    padding: 10px; /* Add padding to textarea */
+    border-radius: 5px; /* Add rounded corners to textarea */
+}
