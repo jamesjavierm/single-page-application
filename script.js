@@ -5,23 +5,23 @@ function renderSignUp() {
         <h1>Sign Up</h1>
         <form id="signupForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter your name"><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email"><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
             <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter your password"><br>
+            <input type="password" id="password" placeholder="Enter your password" required><br>
             <button type="button" onclick="handleSignUp()">Sign Up</button>
         </form>
-    ;
+    `;
 }
 
 let userName = '';
+
 function handleSignUp() {
-9/25/24, 7:57 PM Tutorial: Building a Single Page Web Application with Vanilla JavaScript, HTML, and CSS
-https://md2pdf.netlify.app 3/6
     const nameInput = document.getElementById('name').value;
     const emailInput = document.getElementById('email').value;
     const passwordInput = document.getElementById('password').value;
+
     if (nameInput && emailInput && passwordInput) {
         userName = nameInput; // Store the user's name in a global variable
         renderHomePage();     // Move to the next step in the app
@@ -42,9 +42,10 @@ function renderHomePage() {
 }
 
 let posts = [];
+
 function handleCreatePost() {
     const postContent = document.getElementById('postContent').value;
-    
+
     if (postContent) {
         posts.push(postContent); // Add the new post to the posts array
         renderPostList();        // Update the displayed post list
@@ -60,7 +61,8 @@ function renderPostList() {
         const postItem = document.createElement('li');
         postItem.textContent = post;
         postListElement.appendChild(postItem);
-9/25/24, 7:57 PM Tutorial: Building a Single Page Web Application with Vanilla JavaScript, HTML, and CSS
-https://md2pdf.netlify.app 5/6
     });
-    }
+}
+
+// Initially render the sign-up form when the page loads
+renderSignUp();
